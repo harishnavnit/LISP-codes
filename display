@@ -1,0 +1,12 @@
+#lang racket
+
+(define (make-rat n d)
+  (cons n d))
+(define (numer r) (car r))
+(define (denom r) (cdr r))
+
+(define (print-rat x)
+(display (numer x))
+(display "/")
+(display (denom x))
+(newline))
